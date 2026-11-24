@@ -1,4 +1,5 @@
-data/
+data/*
+!data/README.md
 config.local
 .env
 .env.*
