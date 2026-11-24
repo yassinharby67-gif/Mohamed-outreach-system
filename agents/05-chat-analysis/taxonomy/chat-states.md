@@ -1,14 +1,21 @@
 # Chat States
 
-- رد إيجابي
-- اعتراض
-- سؤال سعر
-- طلب Audit
-- Audit أو Loom أُرسل
-- قال سيحجز ولم يحجز
-- اختفى بعد أول رسالة
-- اختفى بعد Follow-up
-- رفض صريح
-- رد معلّق
-- Conversation Active
-- غير ذلك
+- `POSITIVE_REPLY`
+- `OBJECTION`
+- `PRICE_QUESTION`
+- `AUDIT_REQUESTED`
+- `AUDIT_SENT`
+- `LOOM_SENT`
+- `CALL_PROPOSED`
+- `CALL_BOOKED`
+- `GHOSTED_INITIAL`
+- `GHOSTED_AFTER_FOLLOWUP`
+- `GHOSTED_AFTER_AUDIT`
+- `NEGATIVE_REPLY`
+- `REPLY_PENDING`
+- `CONVERSATION_ACTIVE`
+- `NOT_NOW`
+- `WON`
+- `LOST`
+
+المعاني التفصيلية في `docs/status-list.md`.
