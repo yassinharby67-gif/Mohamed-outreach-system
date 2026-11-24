@@ -1,0 +1,12 @@
+{
+  "name_or_business": "عميل A",
+  "instagram_url": "https://example.invalid/instagram-a",
+  "website_url": "https://example.invalid/site-a",
+  "status": "MESSAGE_DRAFTED",
+  "verification": {
+    "instagram": "متحقق منه",
+    "website": "متحقق منه",
+    "role": "غير متحقق"
+  },
+  "note": "مثال مجهول، لا بيانات حقيقية"
+}

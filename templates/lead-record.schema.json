@@ -1,0 +1,35 @@
+{
+  "type": "object",
+  "required": [
+    "name_or_business",
+    "instagram_url",
+    "website_url",
+    "status"
+  ],
+  "properties": {
+    "name_or_business": {
+      "type": "string"
+    },
+    "instagram_url": {
+      "type": "string"
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "collected_at": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "verification": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}
