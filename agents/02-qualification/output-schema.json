@@ -1,9 +1,42 @@
 {
   "lead_id": "LEAD-0001",
-  "qualification_status": "NEEDS_REVIEW",
+  "qualification_status": "UNVERIFIED",
+  "instagram_fit": "غير مؤكد",
+  "instagram_fit_reason": "غير متاح",
+  "stop_reason": "",
   "fields": {
     "name": {
       "value": "",
+      "verification": "غير متحقق",
+      "evidence_urls": []
+    },
+    "whatsapp": {
+      "value": "غير متاح",
+      "verification": "غير متحقق",
+      "evidence_urls": []
+    },
+    "phone": {
+      "value": "غير متاح",
+      "verification": "غير متحقق",
+      "evidence_urls": []
+    },
+    "email": {
+      "value": "غير متاح",
+      "verification": "غير متحقق",
+      "evidence_urls": []
+    },
+    "other_public_contacts": {
+      "value": [],
+      "verification": "غير متحقق",
+      "evidence_urls": []
+    },
+    "services": {
+      "value": [],
+      "verification": "غير متحقق",
+      "evidence_urls": []
+    },
+    "social_links": {
+      "value": [],
       "verification": "غير متحقق",
       "evidence_urls": []
     }
@@ -12,7 +45,6 @@
     "instagram": false,
     "website": false
   },
-  "exclusion_reason": "",
   "evidence_urls": [],
   "confidence": "low"
 }

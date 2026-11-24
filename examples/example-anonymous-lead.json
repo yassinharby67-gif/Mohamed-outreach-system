@@ -2,7 +2,7 @@
   "name_or_business": "عميل A",
   "instagram_url": "https://example.invalid/instagram-a",
   "website_url": "https://example.invalid/site-a",
-  "status": "MESSAGE_DRAFTED",
+  "status": "DRAFT",
   "verification": {
     "instagram": "متحقق منه",
     "website": "متحقق منه",

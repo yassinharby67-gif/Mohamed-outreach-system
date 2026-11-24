@@ -28,6 +28,35 @@
     "verification": {
       "type": "object"
     },
+    "instagram_fit": {
+      "type": "string",
+      "enum": [
+        "مناسب",
+        "غير مناسب",
+        "غير مؤكد"
+      ]
+    },
+    "instagram_fit_reason": {
+      "type": "string"
+    },
+    "whatsapp": {
+      "type": "object"
+    },
+    "phone": {
+      "type": "object"
+    },
+    "email": {
+      "type": "object"
+    },
+    "other_public_contacts": {
+      "type": "object"
+    },
+    "services": {
+      "type": "object"
+    },
+    "social_links": {
+      "type": "object"
+    },
     "notes": {
       "type": "string"
     }
