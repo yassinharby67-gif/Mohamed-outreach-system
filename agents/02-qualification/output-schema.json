@@ -1,0 +1,18 @@
+{
+  "lead_id": "LEAD-0001",
+  "qualification_status": "NEEDS_REVIEW",
+  "fields": {
+    "name": {
+      "value": "",
+      "verification": "غير متحقق",
+      "evidence_urls": []
+    }
+  },
+  "hard_gates": {
+    "instagram": false,
+    "website": false
+  },
+  "exclusion_reason": "",
+  "evidence_urls": [],
+  "confidence": "low"
+}

@@ -1,0 +1,17 @@
+{
+  "batch_id": "batch-YYYY-MM-DD-001",
+  "target_count": 0,
+  "rows": [
+    {
+      "name_or_business": "",
+      "instagram_url": "",
+      "website_url": "",
+      "source_url": "",
+      "collected_at": "YYYY-MM-DD",
+      "status": "RAW_COLLECTED",
+      "missing": []
+    }
+  ],
+  "count_found": 0,
+  "target_reached": false
+}
