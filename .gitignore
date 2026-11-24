@@ -1,0 +1,10 @@
+data/
+config.local
+.env
+.env.*
+!.env.example
+*.csv
+*.jsonl
+*.sqlite
+*.db
+.DS_Store

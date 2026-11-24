@@ -1,0 +1,5 @@
+# انسخ هذا الملف إلى config.local خارج Git ولا ترفعه.
+SHEET_ID=<LOCAL_ONLY>
+DOC_ID=<LOCAL_ONLY>
+PRIMARY_TOOL=<SET_BEFORE_RUN>
+APPROVAL_OWNER=Yassin
