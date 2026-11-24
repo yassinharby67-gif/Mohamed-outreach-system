@@ -1,31 +1,28 @@
 # Testing Checklist
 
-## اختبار محتوى
+هذا الملف Checklist فقط. لا يعني أن أي تكامل حي اشتغل.
 
-- لا توجد أسماء كاملة أو أرقام أو إيميلات أو روابط حقيقية.
-- كل الروابط في الأمثلة placeholders.
-- لا يوجد Secret أو Token.
-- لا توجد ادعاءات أن CRM أو Google Docs تم تعديلهما.
+## Fixtures وهمية للتجربة الورقية
 
-## اختبار Discovery
+هذه أسماء اختبار فقط، وليست عملاء حقيقيين:
 
-- Lead بدون Instagram يخرج ناقصًا.
-- Lead بدون Website يخرج ناقصًا.
-- Lead بمصدر لا يمكن الوصول إليه يخرج غير متحقق منه.
+1. `https://example.invalid/alpha-instagram` و`https://example.invalid/alpha-site`
+2. `https://example.invalid/beta-instagram` و`https://example.invalid/beta-site`
+3. `https://example.invalid/gamma-instagram` و`https://example.invalid/gamma-site`
 
-## اختبار Qualification
+## الاختبارات المحلية التي تم تشغيلها بعد التصحيح
 
-- كل حقل يحمل Label تحقق.
-- غير متحقق لا يتحول تلقائيًا إلى غير مناسب.
-- سبب الاستبعاد واضح.
+- تم تشغيل `python3 scripts/validate_repo.py` على كل الملفات المتتبعة.
+- تم تشغيل Fixture إيجابي مؤقت خارج الريبو، وكان يجب أن يكتشف Email/Phone/Handle/URL وقيمة Secret وهمية.
+- تم تشغيل Fixture سلبي مؤقت خارج الريبو، واحتوى كلمات سياسة وقيمًا فارغة و`example.invalid`، واجتاز الفحص.
+- لم يتم اختبار Instagram أو Google Sheets أو Google Docs أو إرسال رسائل.
+- لم يتم تشغيل أي Pipeline على بيانات حقيقية.
 
-## اختبار Drafts
+## شروط النجاح اليدوية
 
-- الحالة Draft فقط.
-- لا كتابة قبل Mapping وموافقة.
-- لا إرسال.
-- لا كشف كامل للأوديت.
-
-## ما لم يُختبر
-
-لم يتم اختبار اتصال حي بـInstagram أو Google Sheets أو Google Docs أو GitHub من خلال هذا البناء المحلي. لم يتم تشغيل أي Pipeline فعلي.
+- Lead بدون Instagram ينتقل إلى `MISSING_REQUIRED_DATA`.
+- Lead بدون Website ينتقل إلى `MISSING_REQUIRED_DATA`.
+- دليل غير قابل للوصول ينتقل إلى `UNVERIFIED` وليس `REJECTED` تلقائيًا.
+- كل مسودة تبدأ بحالة `DRAFT`.
+- لا تتحول إلى `SENT` إلا بعد تأكيد ياسين للإرسال اليدوي.
+- أي Mapping للشيت يعرض للموافقة قبل الكتابة.
